@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* form styling */
+
+#wrapper {
+	width: 50%;
+	margin-left:4%;
+}
+div#formcol1 {
+	float:left;	
+	width: 100%;
+	line-height: 1em;
+	padding-bottom: 15px;
+}
+label {
+	margin-right: .5em;
+	width: 6.3em;  /* I made this deliberately wide – come up with your own optimal width */
+	margin-top: 10px;
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+	text-align: right;
+	font-size: 16px;
+}
+#formcol1 li {
+	list-style:none;
+	line-height: 1.5;
+	margin: 5px
+}
+:required {
+	background: #ffff99;;
+}
+
+input[type=text]{
+	width: 40%;
+	padding: 0 20px;
+
+}
+input[type=radio] {
+	margin-left: 5px;
+	margin-right: 15px;
+	transform: scale(1.5);
+}
+/* change the suze of the submit button */
+input[type=submit] {
+	font-size: 15px;
+	font-weight: bold;
+	width: 13em;
+	height: 3.5em;
+	color: black;
+	background: lightgrey;
+	border: 3px solid rgb(37, 34, 34);
+}
+
+/* adds highlights to current fields
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: #BB3D2F !important;}
+*/
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus,
+label[for]:active, input[type=text]:focus, textarea:focus {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	padding: 3px 0px 3px 3px;
+	margin: 2px 1px 2px 0px;
+	border: 3px solid rgba(81, 203, 238, 1);
+	background-color: lightgoldenrodyellow	 !important;
+}
+
+
+/*end of form css */
+	
