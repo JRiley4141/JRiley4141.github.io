@@ -10335,23 +10335,21 @@ border-color:#dee2e6
     transition: transform 0.3s;
 }
     
-.skip {
-    position: absolute;
-    top: -1000px;
-    left: -1000px;
-    transform: translateY(-100%);
+#skip a
+{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
 }
 
-a.skip:active,
-a.skip:focus{
-    transform: translateY(0%);
-}
-a.skip:hover {
-    left: 0;
-    top: 0;
-    width: auto;
-    height: auto;
-    overflow: visible;
+#skip a:focus
+{
+    position:static;
+    width:auto;
+    height:auto;
 }
 
 }
