@@ -10324,6 +10324,16 @@ border-color:#dee2e6
 color:inherit;
 border-color:#dee2e6
 }
+
+.hidden {
+    padding: 8px;
+    position: absolute;
+    background: #E77E23;
+    left: 50%;
+    height: 30px;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
     
 .skip {
     position: absolute;
