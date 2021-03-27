@@ -18,6 +18,18 @@
 
 </head>
 
+
+<a class="skip-main" href="#main">Skip to main content</a>
+<h1>Skip to Main Content - Keyboard Accessible</h1>
+<ul>
+  <li><a href="#registrationButton">Conference Registration</a></li>
+  <li><a href="#testimonials">Testimonials</a></li>
+  <li><a href="#sessionInfo">Session Info</a></li>
+  <li><a href="#library">Video/Audio Library</a></li>
+  <li><a href="#webinars">Accessibility Webinars</a></li>
+
+</ul>
+
 <body>
 
   <!-- Navigation -->
@@ -51,6 +63,7 @@
 
 
   <!-- Page Content -->
+<div id="content">
   <div class="container">
 
     <!-- Heading Row -->
@@ -59,11 +72,11 @@
         <img class="img-fluid rounded mb-4 mb-lg-0" src="images/AHG Conference Logo (2019).jpg" alt="">
       </div>
       <!-- /.col-lg-8 -->
-      <div class="col-lg-7">
+      <div id="main" class="col-lg-7">
         <h1>Accessing Higher Ground:</h1>
         <h2>Acessible Media, Web and Technology Conference</h2>
         <!--Only information missing from the graphic, so the reader can skip it and just read the text.-->
-        <div class = "sr-only">From November 18 to the 22 of 2019 in Westminster, Colorado</div>
+        <div class = "sr-only">From November 18th to the 22nd, 2019. In Westminster, Colorado</div>
         <p>&nbsp;</p>
         <h3>AHG focuses on the implementation and benefits of:</h3>
           <ul>
@@ -72,23 +85,23 @@
             <li>The creation of accessible media and information resources, including Web pages and library resources.</li>
           </ul>
         <p>&nbsp;</p>
-        <a class="btn btn-primary" href="#"><strong> Conference Registration</strong> </a>
+        <a id="registrationButton" class="btn btn-primary" href="#"><strong> Conference Registration</strong> </a>
       </div>
       <!-- /.col-md-4 -->
     </div>
     <!-- /.row -->
 
     <!-- Call to Action Well -->
-    <div class="card bg-dark">
-      <div class="card-body">
-        <h3 class="card-title text-left text-white">Testimonials</h3>
-        <p class="card-text text-center text-white"><strong>A great conference for assistive  technology and web accessibility professionals in higher education.</strong></p>
-        <p class="card-text text-right text-white"><strong>– Lisa  Marie Fiedor, Web Accessibility, Usability, &amp; Design Specialist, North  Carolina State University</strong></p>
-      </div>
+    <div class= "container">
+        <div class="card bg-dark">
+        <div id="testimonials" class="card-body">
+            <h3 class="card-title text-left text-white">Testimonials</h3>
+            <p class="card-text text-center text-white"><strong>A great conference for assistive  technology and web accessibility professionals in higher education.</strong></p>
+            <p class="card-text text-right text-white"><strong>– Lisa  Marie Fiedor, Web Accessibility, Usability, &amp; Design Specialist, North  Carolina State University</strong></p>
+        </div>
+        </div>
     </div>
     <p>&nbsp;</p>
-
-    
 
     <!-- Content Row -->
     <div class="container">
@@ -98,7 +111,7 @@
               <h3 class="card-body"><strong>Annual Conference</strong></h3>
               <div class="card-body">Attend over 120 sessions, including hands-on labs, on topics ranging from accessible PDFs to accessible teaching practices to legal and policy issues.</div>
               <div class="card-footer">
-                <a href="#" class="btn btn-primary btn-sm"><strong> Session Info</strong> </a>
+                <a id="sessionInfo" href="#" class="btn btn-primary btn-sm"><strong> Session Info</strong> </a>
               </div>
           </div>
         </div>
@@ -108,7 +121,7 @@
             <h3 class="card-body"><strong>Video &amp; Audio</strong></h3>
             <div class="card-body">Visit our video and audio library of past conference sessions.</div>
               <div class="card-footer">
-                <a href="#" class="btn btn-primary btn-sm "><strong> Video/Audio Library</strong> </a>
+                <a id="library" href="#" class="btn btn-primary btn-sm "><strong>Video/Audio Library</strong> </a>
               </div>
           </div>
         </div>
@@ -118,24 +131,26 @@
             <h3 class="card-body"><strong>Webinars</strong></h3>
             <div class="card-body">AHG also conducts every other month webinars on web accessibility and curriculum accessibility topics.</div>
               <div class="card-footer">
-                  <a href="#" class="btn btn-primary btn-sm text-center"><strong> Accessibility Webinars</strong> </a>
+                  <a id = "webinars" href="#" class="btn btn-primary btn-sm text-center"><strong> Accessibility Webinars</strong> </a>
               </div>
           </div>
         </div>
       </div>
     <!-- /.row -->
-  </div>
+    </div>
   <!-- /.container -->
 
   <!-- Footer -->
   <!-- footer class="py-5 bg-dark"  -->
-  <footer>
-    <div class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-      </div>
-    </div>
-  </footer>
+    <footer>
+        <div class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        </div>
+        </div>
+    </footer>
+<!-- Page Divider-->
+  </div>  
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
