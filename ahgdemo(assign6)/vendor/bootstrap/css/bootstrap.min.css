@@ -10324,18 +10324,18 @@ border-color:#dee2e6
 color:inherit;
 border-color:#dee2e6
 }
-skip {
+    
+.skip {
     position: absolute;
     top: -1000px;
     left: -1000px;
-    height: 1px;
-    width: 1px;
-    text-align: left;
-    overflow: hidden;
+    transform: translateY(-100%);
 }
 
 a.skip:active,
-a.skip:focus,
+a.skip:focus{
+    transform: translateY(0%);
+}
 a.skip:hover {
     left: 0;
     top: 0;
