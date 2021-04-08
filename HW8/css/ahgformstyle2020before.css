@@ -1,0 +1,54 @@
+/* CSS */
+ 
+
+div.a {
+	line-height: 2;
+}
+
+#formstart {
+	margin-top: 20px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:200%;
+	font-weight:bold;
+}
+
+.outline3 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:125%;
+	font-weight:bold;
+}
+
+.outline4 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:120%;
+	font-weight:bold;
+}
+
+/* change the size of the submit button */
+input[type=submit] {
+	font-size: 12px;
+	font-weight: bold;
+	width: 13em;
+	height: 2.5em;
+	color: black;
+	background: lightgrey;
+	border: 3px solid rgb(37, 34, 34);
+}
+/* adds highlights to focused fields*/
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus,
+label[for]:active, input[type=text]:focus, textarea:focus {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	padding: 3px 0px 3px 3px;
+	margin: 2px 1px 2px 0px;
+	border: 3px solid rgba(81, 203, 238, 1);
+	background-color: lightgoldenrodyellow	 !important;
+}
+
+/* adds highlights to required fields*/
+input:required {
+	box-shadow: 4px 4px 5px rgba(200, 0, 0, 0.85);
+}
+/*adds highlights if textareas are required*/
+textarea:required {
+	box-shadow: 4px 4px 5px rgba(200, 0, 0, 0.85);
+}
